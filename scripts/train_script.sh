@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH -N 1
-#SBATCH -p GPU
+#SBATCH -p GPU-shared
 #SBATCH -t 00:40:00
-#SBATCH --gpus=h100-80:8
+#SBATCH --gpus=v100-16:1
 #echo commands to stdout
 set -x
 
