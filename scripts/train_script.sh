@@ -8,7 +8,7 @@ set -x
 SHADOW_ID=${1:-0}
 echo "Training Shadow Model: ${SHADOW_ID}"
 
-cd /jet/home/der/FoundOfPriv/FoundationOfPrivacy/18734-17731_Project_Phase2_3
+cd /jet/home/der/FoundOfPriv/FoundationOfPrivacy/scripts
 
 module load python/3.8.6
 module load cuda/12.6.1
