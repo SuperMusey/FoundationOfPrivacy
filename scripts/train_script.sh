@@ -28,9 +28,9 @@ else
 fi
 
 python ft_llm.py \
-  --data_dir /ocean/projects/cis250239p/der/FoundOfPriv/FoundationOfPrivacy/18734-17731_Project_Phase2_3/data/val/shadow_data_canary/shadow_${SHADOW_ID} --train_file "train_finetune.json" \
+  --data_dir /ocean/projects/cis250239p/der/FoundOfPriv/FoundationOfPrivacy/18734-17731_Project_Phase2_3/data/final/shadow_data_canary/shadow_${SHADOW_ID} --train_file "train_finetune.json" \
   -m gpt2 --block_size 512 --epochs 3 --batch_size 8 --gradient_accumulation_steps 1 \
-  --lr 2e-4 --outdir /ocean/projects/cis250239p/der/FoundOfPriv/FoundationOfPrivacy/18734-17731_Project_Phase2_3/models/val/shadow_model_canary/shadow_${SHADOW_ID}/gpt2_shadow \
+  --lr 2e-4 --outdir /ocean/projects/cis250239p/der/FoundOfPriv/FoundationOfPrivacy/18734-17731_Project_Phase2_3/models/final/shadow_model_canary/shadow_${SHADOW_ID}/gpt2_shadow \
   --lora --lora_r 32 --lora_alpha 64 --lora_dropout 0.05 --merge_lora
 
 
